@@ -5,7 +5,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { Icon } from "@/components/Icon";
 import { formatPrice } from "@/lib/format";
-import { IMAGES, relatedProducts, type Product } from "@/lib/mock-data";
+import {
+  IMAGES,
+  getProductColorImage,
+  getProductGallery,
+  relatedProducts,
+  type Product,
+} from "@/lib/mock-data";
 import { useCart } from "@/lib/store/useCart";
 
 type ProductDetailProps = {
@@ -26,6 +32,8 @@ export function ProductDetail({ product }: ProductDetailProps) {
   const total = unitPrice * qty;
   const companions = relatedProducts(product.slug, 3);
   const savings = product.compareAt ? product.compareAt - product.price : 0;
+  const gallery = getProductGallery(product, color);
+  const colorImage = getProductColorImage(product, color);
 
   const showToast = (message: string) => {
     setToast(message);
@@ -39,7 +47,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
       slug: product.slug,
       name: product.shortName,
       categoryLabel: product.categoryLabel,
-      image: product.images[0],
+      image: colorImage,
       price: unitPrice,
       quantity: qty,
       color,
@@ -110,8 +118,9 @@ export function ProductDetail({ product }: ProductDetailProps) {
               </div>
               <div className="relative w-full h-full overflow-hidden cursor-crosshair flex items-center justify-center p-4">
                 <Image
-                  alt={product.name}
-                  src={product.images[imageIndex]}
+                  key={gallery[imageIndex]}
+                  alt={`${product.name} in ${color}`}
+                  src={gallery[imageIndex] ?? colorImage}
                   fill
                   priority
                   className={`object-contain transition-transform duration-500 ease-out ${
@@ -131,7 +140,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
             </div>
 
             <div className="grid grid-cols-4 gap-space-sm">
-              {product.images.map((src, index) => (
+              {gallery.map((src, index) => (
                 <button
                   key={src + index}
                   type="button"
@@ -256,7 +265,11 @@ export function ProductDetail({ product }: ProductDetailProps) {
                       aria-label={swatch.name}
                       title={swatch.name}
                       type="button"
-                      onClick={() => setColor(swatch.name)}
+                      onClick={() => {
+                        setColor(swatch.name);
+                        setImageIndex(0);
+                        setZoomed(false);
+                      }}
                       className={`w-9 h-9 rounded-full transition-transform hover:scale-105 shadow-sm ${
                         color === swatch.name
                           ? "ring-2 ring-primary ring-offset-2 ring-offset-surface-container-lowest"
@@ -575,7 +588,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
                           slug: item.slug,
                           name: item.shortName,
                           categoryLabel: item.categoryLabel,
-                          image: item.images[0],
+                          image: getProductColorImage(item, item.colors[0]?.name),
                           price: item.price,
                           color: item.colors[0]?.name,
                         });

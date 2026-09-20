@@ -32,9 +32,6 @@ export function Footer() {
       </div>
       <div className="max-w-studio mx-auto px-margin py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter">
         <div className="lg:col-span-2 pr-gutter">
-          <div className="flex items-center gap-space-md mb-space-md">
-            <Logo className="h-8 w-auto" />
-          </div>
           <p className="font-body-md text-body-md text-on-surface-variant mb-space-lg max-w-md">
             Balancing the clinical discipline of high-end consumer technology with the refined kinetic energy of premier lifestyle artifacts.
           </p>
@@ -69,8 +66,38 @@ export function Footer() {
           </div>
         ))}
       </div>
-      <div className="max-w-studio mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md">
-        <p>© 2025 AURA STUDIO Inc. All rights reserved. Crafted for precision living.</p>
+      <div className="max-w-studio mx-auto px-margin py-space-lg flex flex-col lg:flex-row lg:items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 max-w-3xl">
+          <Logo size="hero" />
+          <div className="flex flex-col gap-1">
+            <p>Copyright 2026 VidyaLabs</p>
+            <p>Principal Developer — Rajesh Kumar</p>
+            <p>
+              Mob —{" "}
+              <a className="hover:text-on-surface transition-colors" href="tel:+919140878191">
+                9140878191
+              </a>
+              ,{" "}
+              <a className="hover:text-on-surface transition-colors" href="tel:+919140189586">
+                9140189586
+              </a>
+              ,{" "}
+              <a className="hover:text-on-surface transition-colors" href="tel:+918004901175">
+                8004901175
+              </a>
+            </p>
+            <p>
+              Email —{" "}
+              <a
+                className="hover:text-on-surface transition-colors"
+                href="mailto:rkrajesh.pgi@gmail.com"
+              >
+                rkrajesh.pgi@gmail.com
+              </a>
+            </p>
+            <p>Address — C-7225, Kalpana Residency, Mohanlalganj, Lucknow, Uttar Pradesh, India</p>
+          </div>
+        </div>
         <div className="flex items-center gap-space-lg">
           <a className="hover:text-on-surface transition-colors" href="#">
             Privacy Policy

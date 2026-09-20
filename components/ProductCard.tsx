@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Icon } from "@/components/Icon";
 import { formatPrice } from "@/lib/format";
-import type { Product } from "@/lib/mock-data";
+import { getProductColorImage, type Product } from "@/lib/mock-data";
 import { useCart } from "@/lib/store/useCart";
 
 type ProductCardProps = {
@@ -17,6 +17,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const [saved, setSaved] = useState(false);
   const [added, setAdded] = useState(false);
   const [color, setColor] = useState(product.colors[0]?.name);
+  const colorImage = getProductColorImage(product, color);
 
   const handleQuickAdd = (event: React.MouseEvent) => {
     event.preventDefault();
@@ -27,7 +28,7 @@ export function ProductCard({ product }: ProductCardProps) {
       slug: product.slug,
       name: product.shortName,
       categoryLabel: product.categoryLabel,
-      image: product.images[0],
+      image: colorImage,
       price: product.price,
       color,
     });
@@ -40,8 +41,9 @@ export function ProductCard({ product }: ProductCardProps) {
       <div className="relative w-full aspect-square bg-surface-container overflow-hidden shrink-0">
         <Link href={`/products/${product.slug}`} className="block h-full w-full">
           <Image
-            src={product.images[0]}
-            alt={product.name}
+            key={colorImage}
+            src={colorImage}
+            alt={`${product.name} in ${color ?? "studio finish"}`}
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -121,7 +123,11 @@ export function ProductCard({ product }: ProductCardProps) {
                 type="button"
                 title={swatch.name}
                 aria-label={swatch.name}
-                onClick={() => setColor(swatch.name)}
+                onClick={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  setColor(swatch.name);
+                }}
                 className={`w-5 h-5 rounded-full ${
                   color === swatch.name
                     ? "ring-2 ring-primary ring-offset-2 ring-offset-surface-container-lowest"

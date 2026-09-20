@@ -11,6 +11,7 @@ export type ProductCategory =
 export type ProductColor = {
   name: string;
   hex: string;
+  image?: string;
 };
 
 export type ProductReview = {
@@ -74,7 +75,100 @@ export const IMAGES = {
     "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=1400&q=80",
   writing:
     "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=1400&q=80",
+  headphonesCream:
+    "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1400&q=80",
+  headphonesTerracotta:
+    "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1400&q=80",
+  leatherBlack:
+    "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1400&q=80",
+  leatherOlive:
+    "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=1400&q=80",
+  leatherTerracotta:
+    "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=1400&q=80",
+  leatherCream:
+    "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=1400&q=80",
+  ceramicTerracotta:
+    "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1400&q=80",
+  ceramicBlack:
+    "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?auto=format&fit=crop&w=1400&q=80",
+  watchBlack:
+    "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1400&q=80",
+  watchTerracotta:
+    "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=1400&q=80",
+  culinaryTerracotta:
+    "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=1400&q=80",
+  culinaryBlack:
+    "https://images.unsplash.com/photo-1517256673644-36ad11246d21?auto=format&fit=crop&w=1400&q=80",
+  lightingBlack:
+    "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1400&q=80",
+  opticsTerracotta:
+    "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=1400&q=80",
+  opticsCream:
+    "https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=1400&q=80",
+  writingTerracotta:
+    "https://images.unsplash.com/photo-1456327102063-fb5054efe647?auto=format&fit=crop&w=1400&q=80",
+  writingCream:
+    "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1400&q=80",
 } as const;
+
+const COLOR_FINISHES: Record<ProductCategory, Record<string, string>> = {
+  acoustics: {
+    "Matte Black": IMAGES.headphones,
+    "Warm Cream": IMAGES.headphonesCream,
+    Terracotta: IMAGES.headphonesTerracotta,
+  },
+  leather: {
+    Cognac: IMAGES.leatherBag,
+    "Matte Black": IMAGES.leatherBlack,
+    "Olive Tan": IMAGES.leatherOlive,
+    Terracotta: IMAGES.leatherTerracotta,
+    "Warm Cream": IMAGES.leatherCream,
+  },
+  vessels: {
+    "Warm Cream": IMAGES.ceramicVase,
+    Terracotta: IMAGES.ceramicTerracotta,
+    "Matte Black": IMAGES.ceramicBlack,
+  },
+  horology: {
+    "Warm Cream": IMAGES.chronograph,
+    "Matte Black": IMAGES.watchBlack,
+    Terracotta: IMAGES.watchTerracotta,
+  },
+  culinary: {
+    "Warm Cream": IMAGES.culinary,
+    Terracotta: IMAGES.culinaryTerracotta,
+    "Matte Black": IMAGES.culinaryBlack,
+  },
+  lighting: {
+    "Warm Cream": IMAGES.lighting,
+    "Matte Black": IMAGES.lightingBlack,
+  },
+  optics: {
+    "Matte Black": IMAGES.optics,
+    Terracotta: IMAGES.opticsTerracotta,
+    "Warm Cream": IMAGES.opticsCream,
+  },
+  writing: {
+    "Matte Black": IMAGES.writing,
+    Terracotta: IMAGES.writingTerracotta,
+    "Warm Cream": IMAGES.writingCream,
+  },
+};
+
+export function getProductColorImage(product: Product, colorName?: string): string {
+  const name = colorName ?? product.colors[0]?.name;
+  const swatch = product.colors.find((color) => color.name === name);
+  if (swatch?.image) return swatch.image;
+  if (name && COLOR_FINISHES[product.category]?.[name]) {
+    return COLOR_FINISHES[product.category][name];
+  }
+  return product.images[0];
+}
+
+export function getProductGallery(product: Product, colorName?: string): string[] {
+  const hero = getProductColorImage(product, colorName);
+  return [hero, ...product.images.filter((src) => src !== hero)];
+}
 
 export const products: Product[] = [
   {

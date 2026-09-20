@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { FormEvent, useMemo, useState } from "react";
 import { Icon } from "@/components/Icon";
+import { Logo } from "@/components/Logo";
 import { formatPrice } from "@/lib/format";
 import {
   getCartCount,
@@ -66,14 +67,8 @@ export function CheckoutModal() {
         <div className="absolute -top-12 -left-12 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
         <div className="relative w-full max-w-6xl bg-surface-container-lowest text-on-surface rounded-xl shadow-2xl overflow-hidden">
           <div className="px-6 py-4 sm:px-10 bg-surface-container-low flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-secondary" />
-                <span className="font-headline-sm tracking-widest text-primary font-bold uppercase text-base sm:text-lg">
-                  AURA STUDIO
-                </span>
-              </div>
-              <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-outline-variant" />
+            <div className="flex items-center gap-3">
+              <Logo size="compact" />
               <span className="font-label-caps text-on-surface-variant uppercase tracking-wider hidden sm:inline-block">
                 Atelier Checkout
               </span>
@@ -481,7 +476,7 @@ export function CheckoutModal() {
                   </div>
                 </div>
                 <div className="pt-8 text-center lg:text-left text-on-surface-variant font-label-caps text-[10px] uppercase tracking-widest flex items-center justify-between">
-                  <span>AURA STUDIO • NYC • PARIS • TOKYO</span>
+                  <span>VIDYALABS • LUCKNOW</span>
                   <span>EST. 2024</span>
                 </div>
               </div>

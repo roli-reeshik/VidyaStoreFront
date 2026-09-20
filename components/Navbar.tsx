@@ -78,8 +78,8 @@ export function Navbar() {
           </div>
         </div>
         <div className="max-w-studio mx-auto px-margin h-16 flex items-center justify-between gap-gutter">
-          <Link href="/" className="flex items-center gap-space-md min-w-0">
-            <Logo className="h-8 w-auto" />
+          <Link href="/" aria-label="VidyaLabs" className="flex items-center shrink-0">
+            <Logo size="nav" priority />
           </Link>
           <nav className="hidden lg:flex items-center gap-space-lg h-full">
             {NAV_LINKS.map((link, index) => {
