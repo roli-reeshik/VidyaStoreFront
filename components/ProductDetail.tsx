@@ -121,7 +121,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
               </div>
               <div className="absolute bottom-space-md left-space-md right-space-md flex items-center justify-between pointer-events-none">
                 <span className="px-2.5 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur text-on-surface font-label-caps text-[10px] tracking-widest uppercase">
-                  Figure 0{imageIndex + 1} // Studio Angle
+                  {`Figure 0${imageIndex + 1} · Studio Angle`}
                 </span>
                 <div className="flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur text-on-surface-variant font-label-caps text-[10px]">
                   <span className="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse" />

@@ -32,12 +32,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${plusJakarta.variable}`}>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,1&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body>
         <Navbar />
         <main className="w-full pt-[137px] bg-surface min-h-screen">{children}</main>
