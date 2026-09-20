@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#cbdbf5","tertiary":"#000000","on-primary-fixed-variant":"#3f465c","surface":"#f8f9ff","primary-container":"#131b2e","surface-container-highest":"#d3e4fe","primary-fixed":"#dae2fd","surface-tint":"#565e74","on-secondary-fixed":"#0f0069","primary-fixed-dim":"#bec6e0","on-primary-container":"#7c839b","on-tertiary-container":"#79849a","error":"#ba1a1a","on-error-container":"#93000a","primary":"#000000","on-error":"#ffffff","on-primary-fixed":"#131b2e","inverse-on-surface":"#eaf1ff","secondary-fixed-dim":"#c3c0ff","tertiary-fixed":"#d8e3fb","on-background":"#0b1c30","on-primary":"#ffffff","on-surface-variant":"#45464d","inverse-primary":"#bec6e0","on-tertiary-fixed":"#111c2d","surface-container-high":"#dce9ff","on-secondary-container":"#fffbff","on-secondary":"#ffffff","background":"#f8f9ff","tertiary-fixed-dim":"#bcc7de","inverse-surface":"#213145","error-container":"#ffdad6","tertiary-container":"#111c2d","secondary":"#4b41e1","surface-bright":"#f8f9ff","secondary-container":"#645efb","on-tertiary-fixed-variant":"#3c475a","on-surface":"#0b1c30","outline-variant":"#c6c6cd","outline":"#76777d","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","surface-container":"#e5eeff","on-secondary-fixed-variant":"#3323cc","secondary-fixed":"#e2dfff","on-tertiary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"3rem","gutter-desktop":"2rem","space-lg":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xs":"0.25rem","margin":"1.5rem","margin-mobile":"1rem","gutter-mobile":"1rem","space-xl":"2.5rem","gutter":"1.5rem"},"fontFamily":{"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"price-hero":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"label-caps":["Inter"],"price-card":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Inter"]},"fontSize":{"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"price-hero":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"700"}],"price-card":["16px",{"lineHeight":"22px","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-on-primary px-margin flex items-center justify-between text-label-caps font-label-caps h-9 tracking-wider"><div class="flex items-center gap-space-xs"><span class="text-secondary-fixed font-bold">AURA EXCLUSIVE:</span><span>Complimentary Worldwide Express Shipping on Orders Over $200 — Code: FREESHIP</span></div><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs text-on-primary hover:text-secondary-fixed transition-colors font-label-caps text-label-caps" type="button"><span>USD ($)</span><span class="material-symbols-outlined text-[14px]">expand_more</span></button><span class="text-outline-variant">|</span><a class="text-on-primary hover:text-secondary-fixed transition-colors" data-path="concierge" href="#">Client Concierge</a></div></div><div class="max-w-[1440px] mx-auto px-margin h-16 flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="AURA STUDIO Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbps_aF4HczcrqzPxCS2pcKROyGKP_gDIqhpLE2ZaVsWCXl4cf22nMK2S0i6taZ72I1bD6XGemeBZVWVdCnYRNPh54-MQoosIO-LZNfcJcVDMEAqsVOi97TlmURErL5kbq0l2DlZLZCvng42wzZkcfl61JTcqB-znAxc8wlLdC0CxoH3c1Nfv-zRgg1QVPVWZBt7etymhUqegFTubFOku9QgNxKk9iMu4Q4zICmoXYJMqZGm5O6cK7XoM"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">Aura Studio</span></div><nav class="hidden lg:flex items-center gap-space-lg h-full" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg py-space-sm" data-path="shop-all" href="#">Shop All</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg py-space-sm" data-path="categories" href="#">Categories</a><a aria-current="page" class="transition-colors py-space-sm text-primary font-bold border-b-2 border-primary" data-path="best-sellers" href="#">Best Sellers</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg py-space-sm" data-path="new-arrivals" href="#">New Arrivals</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg py-space-sm" data-path="about-studio" href="#">About Studio</a></nav><div class="flex items-center gap-space-md"><button class="hidden md:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface transition-colors group" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm">Search catalogue</span><kbd class="ml-space-xs font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">⌘K</kbd></button><a class="relative p-2 text-on-surface-variant hover:text-on-surface transition-colors flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-1 right-1 w-4 h-4 bg-secondary text-on-secondary rounded-full flex items-center justify-center font-label-caps text-[9px] leading-none">2</span></a><button class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-primary text-on-primary hover:bg-primary-container transition-all" type="button"><span class="material-symbols-outlined text-[20px]">local_mall</span><span class="font-label-lg text-label-lg">$680.00</span><span class="px-1.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-caps text-[10px] leading-none">3</span></button><div class="pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf232b9Kq8ciK9LQpoTEwieC4O8NZF98GihUj0YxGNXmhx1nrUo1Ywuyk-zKVFRQoNGEEGDOKD9vWTo-6PdLZvJsJqXf7whtxoa14f3ycYphtF4ogHjndqvajr2rdmPi65DOvK4WXjCvMNkD7qxAjTVIbnbi0oLoxCc6bDNTFXl38DBHpkK3YfQ7vgWMF1sKzcAPPGrQGufcMJD8T42E79usfY5KMzb-Dogvrdi3agf2SFFZdt6zZj"/></div></div></div><div class="bg-surface-container-low px-margin py-2"><div class="max-w-[1440px] mx-auto flex items-center gap-space-md overflow-x-auto"><span class="font-label-caps text-label-caps text-on-surface-variant whitespace-nowrap">Trending Inquiries:</span><div class="flex items-center gap-space-xs"><a class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)] whitespace-nowrap" data-path="shop-all" href="#">Noise-Cancelling Headphones</a><a class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)] whitespace-nowrap" data-path="shop-all" href="#">Cognac Leather Tote</a><a class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)] whitespace-nowrap" data-path="shop-all" href="#">Ceramic Table Lamp</a><a class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all shadow-[0_1px_4px_rgba(0,0,0,0.02)] whitespace-nowrap" data-path="shop-all" href="#">Italian Wool Coat</a></div></div></div></header><main class="w-full pt-[137px] bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification Container -->
+<div class="fixed top-24 right-6 z-50 transform translate-y-[-120%] opacity-0 transition-all duration-500 ease-out pointer-events-none flex items-center gap-space-md p-space-md rounded-xl bg-primary text-on-primary shadow-2xl" id="cart-toast">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">check_circle</span>
+</div>
+<div>
+<h5 class="font-label-lg text-label-lg text-on-primary">Added to Atelier Bag</h5>
+<p class="font-body-sm text-body-sm text-on-primary-container" id="toast-summary">AURA One — Obsidian Matte ($380.00)</p>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-primary-container cursor-pointer ml-space-sm" onclick="hideToast()">close</span>
+</div>
+<!-- Main Product Detail Canvas -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop py-space-lg w-full">
+<!-- Breadcrumb Hierarchy -->
+<nav aria-label="Breadcrumbs" class="flex items-center gap-space-xs text-label-md font-label-md text-on-surface-variant mb-space-lg overflow-x-auto whitespace-nowrap">
+<a class="hover:text-on-surface transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<a class="hover:text-on-surface transition-colors" href="#">Audio &amp; Acoustics</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<a class="hover:text-on-surface transition-colors" href="#">Studio Series</a>
+<span class="material-symbols-outlined text-[14px] text-outline-variant">chevron_right</span>
+<span class="text-on-surface font-semibold">AURA One</span>
+</nav>
+<!-- Two-Column Master Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT COLUMN: Image Gallery & Media Spec Presentation (7 Columns) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Primary Hero Viewport -->
+<div class="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex items-center justify-center group select-none">
+<!-- Ambient Radial Lighting Glow -->
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-container-low/80 via-transparent to-surface-container-high/40 pointer-events-none"></div>
+<!-- Product Badges -->
+<div class="absolute top-space-md left-space-md z-10 flex flex-wrap gap-space-xs">
+<span class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-caps text-label-caps tracking-wider uppercase shadow-sm">
+              Best Seller
+            </span>
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps tracking-wider uppercase shadow-sm">
+              -15% Archive Promotion
+            </span>
+</div>
+<!-- Interactive Action Floats (Zoom & Fullscreen) -->
+<div class="absolute top-space-md right-space-md z-10 flex items-center gap-space-xs">
+<button aria-label="Toggle Magnifier" class="w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface shadow-md hover:bg-surface-container-lowest transition-transform hover:scale-105 flex items-center justify-center" id="zoom-btn" onclick="toggleZoom()" type="button">
+<span class="material-symbols-outlined text-[20px]" id="zoom-icon">zoom_in</span>
+</button>
+<button aria-label="Fullscreen Gallery" class="px-3 py-2 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface shadow-md hover:bg-surface-container-lowest font-label-md text-label-md flex items-center gap-1" onclick="openFullscreenModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+<span class="hidden sm:inline">Inspect</span>
+</button>
+</div>
+<!-- Main Zoomable Image -->
+<div class="relative w-full h-full overflow-hidden cursor-crosshair flex items-center justify-center p-4">
+<img alt="AURA One Wireless Studio Headphones Primary View" class="w-full h-full object-contain transition-transform duration-500 ease-out origin-center" id="main-product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWdyLl1b3qUUnscuw4h1NFIbLnhujfNl0M3QZeP-p6pKNcjMOJ4pli5ozicCh4gLPSK0m08CBqLIZoev6Iyh5W1Wu7mUw7WHfHNOnzvtPmlhpZZOK_f4fnWRJsNbljriUqrd026Rpa--KngD3D6HxApXUaDfqsv1rJbkzAimiKaWYCMspj7UAKZTYkTEQc_kq7KhHoWQCBuMtoEhjWvBnSHi7csYjZsjTlEda1IC6nSHX9LRO5iAw3"/>
+</div>
+<!-- Micro-caption -->
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-center justify-between pointer-events-none">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur text-on-surface font-label-caps text-[10px] tracking-widest uppercase">
+              Figure 01 // Calibration Angle
+            </span>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur text-on-surface-variant font-label-caps text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>360° Studio Scan Ready</span>
+</div>
+</div>
+</div>
+<!-- Thumbnail Selector Ribbon (4 Angles) -->
+<div class="grid grid-cols-4 gap-space-sm" id="thumb-strip">
+<!-- Thumb 1: Front Studio -->
+<button class="thumb-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm transition-all p-1.5 text-left bg-surface-container-high" data-index="0" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuAWdyLl1b3qUUnscuw4h1NFIbLnhujfNl0M3QZeP-p6pKNcjMOJ4pli5ozicCh4gLPSK0m08CBqLIZoev6Iyh5W1Wu7mUw7WHfHNOnzvtPmlhpZZOK_f4fnWRJsNbljriUqrd026Rpa--KngD3D6HxApXUaDfqsv1rJbkzAimiKaWYCMspj7UAKZTYkTEQc_kq7KhHoWQCBuMtoEhjWvBnSHi7csYjZsjTlEda1IC6nSHX9LRO5iAw3', 0)" type="button">
+<img alt="Angle 1: Front View" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWdyLl1b3qUUnscuw4h1NFIbLnhujfNl0M3QZeP-p6pKNcjMOJ4pli5ozicCh4gLPSK0m08CBqLIZoev6Iyh5W1Wu7mUw7WHfHNOnzvtPmlhpZZOK_f4fnWRJsNbljriUqrd026Rpa--KngD3D6HxApXUaDfqsv1rJbkzAimiKaWYCMspj7UAKZTYkTEQc_kq7KhHoWQCBuMtoEhjWvBnSHi7csYjZsjTlEda1IC6nSHX9LRO5iAw3"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-primary/80 text-on-primary font-label-caps text-[9px] uppercase">A1</span>
+</button>
+<!-- Thumb 2: Architectural Context -->
+<button class="thumb-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm transition-all p-1.5 text-left opacity-70 hover:opacity-100" data-index="1" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuBkK1Q0dcthewQ8_wAa5Mi3mfWGN0xNuK22g5mmt86JxU7yiRDzqcmbHp9iOp5Tl1U0QnohvB3sdQv0Nxsa4xoxLFigKMkZO8NukIKonxIknSTNMyhUyuJ5YUD4yhDsu94JZL_YLXg2TnT6ZPtK6ZAVpJF05uupYfMfHcOGalYBAXtrNra8aWtVMdIF5Qgl7WrhBkzho_Gdy5VM2Ikxy97Xx1f8dLdm8ni19HEYJhEnxX5rc3WejbrS', 1)" type="button">
+<img alt="Angle 2: Contextual Travertine Still Life" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkK1Q0dcthewQ8_wAa5Mi3mfWGN0xNuK22g5mmt86JxU7yiRDzqcmbHp9iOp5Tl1U0QnohvB3sdQv0Nxsa4xoxLFigKMkZO8NukIKonxIknSTNMyhUyuJ5YUD4yhDsu94JZL_YLXg2TnT6ZPtK6ZAVpJF05uupYfMfHcOGalYBAXtrNra8aWtVMdIF5Qgl7WrhBkzho_Gdy5VM2Ikxy97Xx1f8dLdm8ni19HEYJhEnxX5rc3WejbrS"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-primary/80 text-on-primary font-label-caps text-[9px] uppercase">Context</span>
+</button>
+<!-- Thumb 3: Acoustic Detail & Surface Resonance -->
+<button class="thumb-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm transition-all p-1.5 text-left opacity-70 hover:opacity-100" data-index="2" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuBkeZrSwheRyXu2Plz7sMmw-Pwfpv31nEkd9Xmy0ljozpqY0TUp9lF5tTVCrS_v8zUr8CCeVS1FxNXI1VouR_I18EJMpaUmgjAdIm9YbgEOYD1TpE8-eKdZsIyaES3Pi2P_SsNnlng1TkrojKUp8gPJVJXwyHwP6oBFtiAJt8j_2dL_RF_qz2Bkt0E1GWybKRGjpDojW3KHVS4b3Al5zHA4BEfHGyN_iUO3nKh9oJOfrnQtYiMUeCNU', 2)" type="button">
+<img alt="Angle 3: Material Craftsmanship Details" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkeZrSwheRyXu2Plz7sMmw-Pwfpv31nEkd9Xmy0ljozpqY0TUp9lF5tTVCrS_v8zUr8CCeVS1FxNXI1VouR_I18EJMpaUmgjAdIm9YbgEOYD1TpE8-eKdZsIyaES3Pi2P_SsNnlng1TkrojKUp8gPJVJXwyHwP6oBFtiAJt8j_2dL_RF_qz2Bkt0E1GWybKRGjpDojW3KHVS4b3Al5zHA4BEfHGyN_iUO3nKh9oJOfrnQtYiMUeCNU"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-primary/80 text-on-primary font-label-caps text-[9px] uppercase">Detail</span>
+</button>
+<!-- Thumb 4: Modern Persona Fit -->
+<button class="thumb-btn relative aspect-square rounded-lg overflow-hidden bg-surface-container-lowest shadow-sm transition-all p-1.5 text-left opacity-70 hover:opacity-100" data-index="3" onclick="switchImage('https://lh3.googleusercontent.com/aida-public/AB6AXuCf232b9Kq8ciK9LQpoTEwieC4O8NZF98GihUj0YxGNXmhx1nrUo1Ywuyk-zKVFRQoNGEEGDOKD9vWTo-6PdLZvJsJqXf7whtxoa14f3ycYphtF4ogHjndqvajr2rdmPi65DOvK4WXjCvMNkD7qxAjTVIbnbi0oLoxCc6bDNTFXl38DBHpkK3YfQ7vgWMF1sKzcAPPGrQGufcMJD8T42E79usfY5KMzb-Dogvrdi3agf2SFFZdt6zZj', 3)" type="button">
+<img alt="Angle 4: Editorial Lifestyle Model Fitting" class="w-full h-full object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf232b9Kq8ciK9LQpoTEwieC4O8NZF98GihUj0YxGNXmhx1nrUo1Ywuyk-zKVFRQoNGEEGDOKD9vWTo-6PdLZvJsJqXf7whtxoa14f3ycYphtF4ogHjndqvajr2rdmPi65DOvK4WXjCvMNkD7qxAjTVIbnbi0oLoxCc6bDNTFXl38DBHpkK3YfQ7vgWMF1sKzcAPPGrQGufcMJD8T42E79usfY5KMzb-Dogvrdi3agf2SFFZdt6zZj"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-primary/80 text-on-primary font-label-caps text-[9px] uppercase">Form</span>
+</button>
+</div>
+<!-- Technical Telemetry Strip (Inline Data Visual) -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">graphic_eq</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Harmonic Distortion</p>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">&lt; 0.05% THD @ 1kHz</h4>
+</div>
+</div>
+<!-- Dynamic Acoustic Response Curve Mini-SVG -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<div class="flex flex-col items-end">
+<span class="font-label-caps text-[10px] text-on-surface-variant">FLAT CURVE PROFILE</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">10Hz – 45,000Hz</span>
+</div>
+<svg class="w-28 h-8 text-secondary" fill="none" viewbox="0 0 120 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 24C15 24 25 18 35 15C45 12 55 12 65 14C75 16 85 10 95 8C105 6 115 14 120 18" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="95" cy="8" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Purchasing Controls & Narrative Specification (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md lg:sticky lg:top-[155px]">
+<!-- Header & Social Rating -->
+<div class="flex flex-col gap-space-xs">
+<!-- Rating Line -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<div class="flex text-secondary text-[16px] leading-none">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">4.9</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline decoration-outline-variant underline-offset-4 ml-1" href="#reviews-anchor">(148 verified reviews)</a>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase">SKU: AUR-001-OBS</span>
+</div>
+<!-- Product Title -->
+<h1 class="font-headline-lg text-headline-lg tracking-tight text-on-surface font-bold mt-1">
+            AURA One Wireless Studio Headphones
+          </h1>
+</div>
+<!-- Pricing Block -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline gap-space-md">
+<span class="font-display-hero-mobile text-display-hero-mobile font-bold text-on-surface tracking-tight" id="active-price">$380.00</span>
+<span class="font-headline-md text-headline-md text-on-surface-variant line-through decoration-outline">$450.00</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-bold uppercase tracking-wider">
+              Save $70 (15% OFF)
+            </span>
+</div>
+<!-- Installments Row -->
+<div class="flex items-center gap-space-xs pt-space-xs text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">payments</span>
+<span>Or 4 interest-free installments of <strong class="text-on-surface font-semibold">$95.00</strong> with Klarna or Afterpay</span>
+</div>
+</div>
+<!-- Variant Selection Matrix -->
+<div class="flex flex-col gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<!-- Color Swatches -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Finish</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold" id="swatch-label">Obsidian Matte</span>
+</div>
+<div class="flex items-center gap-space-md mt-1">
+<!-- Obsidian Matte -->
+<button aria-label="Obsidian Matte" class="color-chip group relative w-9 h-9 rounded-full bg-slate-900 p-0.5 transition-transform hover:scale-105 shadow-sm ring-2 ring-primary ring-offset-2 ring-offset-surface-container-lowest" onclick="selectColor('Obsidian Matte', this)" title="Obsidian Matte" type="button">
+<span class="sr-only">Obsidian Matte</span>
+</button>
+<!-- Titanium Mist -->
+<button aria-label="Titanium Mist" class="color-chip group relative w-9 h-9 rounded-full bg-slate-300 p-0.5 transition-transform hover:scale-105 shadow-sm" onclick="selectColor('Titanium Mist', this)" title="Titanium Mist" type="button">
+<span class="sr-only">Titanium Mist</span>
+</button>
+<!-- Limestone Dune -->
+<button aria-label="Limestone Dune" class="color-chip group relative w-9 h-9 rounded-full bg-amber-100 p-0.5 transition-transform hover:scale-105 shadow-sm" onclick="selectColor('Limestone Dune', this)" title="Limestone Dune" type="button">
+<span class="sr-only">Limestone Dune</span>
+</button>
+</div>
+</div>
+<!-- Fit / Pack Architecture Variant -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Acoustic Fit Configuration</span>
+<a class="font-label-md text-label-md text-secondary hover:underline" href="javascript:void(0)" onclick="alert('Standard Fit features wide circumaural acoustic chambers. Travel Pack features compact folding pivots with a hard shell case.')">Fit Guide</a>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-1">
+<button class="fit-chip px-space-md py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg transition-all text-left flex flex-col justify-between h-16 shadow-sm" onclick="selectFit(this, 380)" type="button">
+<span class="font-semibold">Circumaural Over-Ear</span>
+<span class="text-[11px] opacity-80">Reference Studio (Standard)</span>
+</button>
+<button class="fit-chip px-space-md py-3 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-all text-left flex flex-col justify-between h-16" onclick="selectFit(this, 420)" type="button">
+<span class="font-semibold">Travel Foldable Pack</span>
+<span class="text-[11px] text-on-surface-variant">+$40 with Pelican Case</span>
+</button>
+</div>
+</div>
+<!-- Real-Time Stock Status Pulse -->
+<div class="flex items-center gap-space-sm p-2.5 rounded-lg bg-surface-container-low text-on-surface mt-1">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">
+              In Stock — <strong class="font-semibold text-secondary">Only 4 units remaining</strong> for priority same-day dispatch.
+            </span>
+</div>
+<!-- Quantity & Primary Checkout Action Matrix -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<!-- Stepper -->
+<div class="flex items-center rounded-lg bg-surface-container-low p-1 h-12 shadow-inner">
+<button aria-label="Decrease quantity" class="w-10 h-full flex items-center justify-center rounded text-on-surface hover:bg-surface-container-lowest transition-colors font-bold select-none text-[18px]" onclick="adjustQty(-1)" type="button">−</button>
+<span class="w-10 text-center font-label-lg text-label-lg font-semibold text-on-surface select-none" id="qty-val">1</span>
+<button aria-label="Increase quantity" class="w-10 h-full flex items-center justify-center rounded text-on-surface hover:bg-surface-container-lowest transition-colors font-bold select-none text-[18px]" onclick="adjustQty(1)" type="button">+</button>
+</div>
+<!-- Big Primary Cart Action -->
+<button class="flex-1 h-12 px-space-lg rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all transform active:scale-[0.99] flex items-center justify-center gap-space-sm shadow-md font-label-lg text-label-lg" id="add-to-cart-btn" onclick="handleAddToCart()" type="button">
+<span class="material-symbols-outlined text-[20px]">local_mall</span>
+<span id="cta-label">Add to Atelier Bag — $380.00</span>
+</button>
+</div>
+<!-- Instant Express Payment Trigger -->
+<button class="w-full h-12 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container transition-all flex items-center justify-center gap-space-xs font-label-lg text-label-lg shadow-sm" onclick="handleInstantCheckout()" type="button">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Express Checkout with Apple Pay</span>
+</button>
+</div>
+<!-- Trust Badges Cluster -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-sm text-center">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">flight_takeoff</span>
+<span class="font-label-caps text-[10px] text-on-surface font-semibold uppercase leading-tight">Free 2-Day Air</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-label-caps text-[10px] text-on-surface font-semibold uppercase leading-tight">30-Day Trial</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield_with_heart</span>
+<span class="font-label-caps text-[10px] text-on-surface font-semibold uppercase leading-tight">2-Yr Warranty</span>
+</div>
+</div>
+</div>
+<!-- Technical Accordion Modules -->
+<div class="flex flex-col gap-space-xs">
+<!-- Accordion 1: Acoustic Architecture (Expanded Default) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface" onclick="toggleAccordion('spec-1', this)" type="button">
+<span>Acoustic Architecture &amp; Specs</span>
+<span class="material-symbols-outlined transition-transform duration-300 transform rotate-180">expand_more</span>
+</button>
+<div class="px-space-md pb-space-md flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant" id="spec-1">
+<div class="grid grid-cols-2 gap-space-sm py-2 border-b border-surface-container-high/30">
+<span class="font-medium text-on-surface">Transducer:</span>
+<span>40mm Custom Electro-Dynamic Beryllium Driver</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-2 border-b border-surface-container-high/30">
+<span class="font-medium text-on-surface">Active Cancellation:</span>
+<span>4-Microphone Hybrid Feedforward &amp; Feedback ANC</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-2 border-b border-surface-container-high/30">
+<span class="font-medium text-on-surface">Battery Longevity:</span>
+<span>38 Hours (ANC On) / 54 Hours (Passive Mode)</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm py-2">
+<span class="font-medium text-on-surface">Connectivity:</span>
+<span>Lossless Bluetooth 5.3 + Qualcomm aptX Adaptive</span>
+</div>
+</div>
+</div>
+<!-- Accordion 2: Materials & Craftsmanship -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface" onclick="toggleAccordion('spec-2', this)" type="button">
+<span>Materials &amp; Craftsmanship</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-space-md flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant" id="spec-2">
+<p>Hand-assembled in small batches. Constructed from CNC-machined aircraft grade aluminum 6063-T6, anodized with a low-glare matte finish. The headband cushion uses ethically sourced supple Italian Nappa leather over dual-layer viscoelastic memory foam engineered for zero cranial fatigue during prolonged studio sessions.</p>
+</div>
+</div>
+<!-- Accordion 3: Shipping & Complimentary Returns -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface" onclick="toggleAccordion('spec-3', this)" type="button">
+<span>Shipping &amp; Complimentary Returns</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-space-md flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant" id="spec-3">
+<p>All orders include insured carbon-neutral DHL Express delivery. If the acoustic character does not exceed expectations, utilize our prepaid concierge return label within 30 days for a full studio credit or immediate card refund.</p>
+</div>
+</div>
+<!-- Accordion 4: Frequently Asked Questions -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-md flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface" onclick="toggleAccordion('spec-4', this)" type="button">
+<span>Frequently Asked Questions</span>
+<span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-space-md flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant" id="spec-4">
+<p class="font-medium text-on-surface">Can these be driven without a dedicated headphone DAC/Amp?</p>
+<p class="mb-2">Yes. With an internal impedance curve optimized at 32 Ohms, your phone or laptop will drive them to full dynamic expression without external amplification.</p>
+<p class="font-medium text-on-surface">Does the package include passive analog cables?</p>
+<p>Included: 1.5m braided Kevlar 3.5mm-to-3.5mm analog audio cable, 6.35mm studio gold adapter, and a USB-C high-resolution lossless DAC charging cable.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Storytelling Banner Section -->
+<div class="my-space-xl rounded-xl overflow-hidden bg-primary-container text-on-primary shadow-xl relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="lg:col-span-6 p-space-lg lg:p-space-xl flex flex-col gap-space-md z-10">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps tracking-widest uppercase w-max">
+            Architectural Precision
+          </span>
+<h2 class="font-headline-lg text-headline-lg tracking-tight text-on-primary">
+            Engineered for pure isolation, without acoustic compromise.
+          </h2>
+<p class="font-body-md text-body-md text-on-primary-container max-w-lg">
+            Every curve and resonance cavity in the AURA One is numerically tuned to eliminate micro-vibrations before soundwaves touch the ear canal. The result is pure, surgical staging identical to mastering room acoustics.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary-fixed">0.05%</span>
+<span class="font-label-caps text-label-caps text-on-primary-container">Linear Distortion</span>
+</div>
+<div class="w-px h-10 bg-on-primary-container/20"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary-fixed">45 kHz</span>
+<span class="font-label-caps text-label-caps text-on-primary-container">High-Freq Extension</span>
+</div>
+<div class="w-px h-10 bg-on-primary-container/20"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-secondary-fixed">-42 dB</span>
+<span class="font-label-caps text-label-caps text-on-primary-container">ANC Noise Floor</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 h-80 lg:h-[460px] relative overflow-hidden">
+<img alt="AURA Studio Atmospheric Architecture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkK1Q0dcthewQ8_wAa5Mi3mfWGN0xNuK22g5mmt86JxU7yiRDzqcmbHp9iOp5Tl1U0QnohvB3sdQv0Nxsa4xoxLFigKMkZO8NukIKonxIknSTNMyhUyuJ5YUD4yhDsu94JZL_YLXg2TnT6ZPtK6ZAVpJF05uupYfMfHcOGalYBAXtrNra8aWtVMdIF5Qgl7WrhBkzho_Gdy5VM2Ikxy97Xx1f8dLdm8ni19HEYJhEnxX5rc3WejbrS"/>
+<div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-primary-container via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Verified Patron Review Spotlight Anchor -->
+<div class="py-space-md w-full" id="reviews-anchor">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">Soundstage Verification</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-1">From The Creative Vanguard</h3>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-colors" onclick="alert('Review submission modal opens in verified customer view.')" type="button">
+          Submit Critique
+        </button>
+</div>
+<!-- Spotlight Review Card Bento -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Primary Featured Patron Review (col-span-2) -->
+<div class="md:col-span-2 p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="Marcus Vance Studio Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf232b9Kq8ciK9LQpoTEwieC4O8NZF98GihUj0YxGNXmhx1nrUo1Ywuyk-zKVFRQoNGEEGDOKD9vWTo-6PdLZvJsJqXf7whtxoa14f3ycYphtF4ogHjndqvajr2rdmPi65DOvK4WXjCvMNkD7qxAjTVIbnbi0oLoxCc6bDNTFXl38DBHpkK3YfQ7vgWMF1sKzcAPPGrQGufcMJD8T42E79usfY5KMzb-Dogvrdi3agf2SFFZdt6zZj"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Marcus Vance</h4>
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;" title="Verified Customer">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Creative Director &amp; Composer, Vance Studios London</p>
+</div>
+</div>
+<div class="flex text-secondary text-[16px]">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed mt-2 italic">
+              “The AURA One is the first wireless monitoring pair I feel confident mixing commercial deliverables on while travelling. The transient response of the custom beryllium drivers isolates percussive micro-details without producing any top-end fatigue. The chassis weight distribution is virtually imperceptible.”
+            </p>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md pt-space-xs border-t border-surface-container-high/30">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> Verified Purchase — Obsidian Matte (Standard Fit)</span>
+<span>Reviewed 4 days ago</span>
+</div>
+</div>
+<!-- Aggregate Score Breakdown Visual Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Studio Staging Score</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero text-display-hero font-bold text-on-surface leading-none">4.9</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">/ 5.0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Based on 148 verified mastering engineers &amp; daily studio listeners.</p>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface">
+<span>Sound Fidelity</span>
+<span class="font-semibold">99%</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 99%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface mt-1">
+<span>Comfort &amp; Ergonomics</span>
+<span class="font-semibold">96%</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 96%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface mt-1">
+<span>Build Quality</span>
+<span class="font-semibold">98%</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 98%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Related Studio Pairings Component -->
+<div class="mt-space-xl pb-space-lg">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary font-bold uppercase tracking-wider">Acoustic Ecosystem</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-1">Frequently Paired Artifacts</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">Curated by Aura Studio</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Companion 1: Sculptural Ceramic Acoustic Dampener -->
+<div class="group flex flex-col rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="aspect-square w-full relative bg-surface-container-low overflow-hidden">
+<img alt="Sculptural Ceramic Resonance Dampener" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkeZrSwheRyXu2Plz7sMmw-Pwfpv31nEkd9Xmy0ljozpqY0TUp9lF5tTVCrS_v8zUr8CCeVS1FxNXI1VouR_I18EJMpaUmgjAdIm9YbgEOYD1TpE8-eKdZsIyaES3Pi2P_SsNnlng1TkrojKUp8gPJVJXwyHwP6oBFtiAJt8j_2dL_RF_qz2Bkt0E1GWybKRGjpDojW3KHVS4b3Al5zHA4BEfHGyN_iUO3nKh9oJOfrnQtYiMUeCNU"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-caps text-[10px] uppercase">
+              Acoustic Decor
+            </span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Desktop Living</p>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Ribbed Ceramic Resonance Diffuser</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Hand-thrown refractory stoneware designed to absorb high-frequency desktop reflections.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-price-card text-price-card font-bold text-on-surface">$160.00</span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md font-semibold" onclick="quickAdd('Ribbed Ceramic Resonance Diffuser', 160)" type="button">
+                + Quick Add
+              </button>
+</div>
+</div>
+</div>
+<!-- Companion 2: Italian Nappa Travel Case -->
+<div class="group flex flex-col rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="aspect-square w-full relative bg-surface-container-low overflow-hidden">
+<img alt="Aura Architecture Headphone Travel Bag" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkK1Q0dcthewQ8_wAa5Mi3mfWGN0xNuK22g5mmt86JxU7yiRDzqcmbHp9iOp5Tl1U0QnohvB3sdQv0Nxsa4xoxLFigKMkZO8NukIKonxIknSTNMyhUyuJ5YUD4yhDsu94JZL_YLXg2TnT6ZPtK6ZAVpJF05uupYfMfHcOGalYBAXtrNra8aWtVMdIF5Qgl7WrhBkzho_Gdy5VM2Ikxy97Xx1f8dLdm8ni19HEYJhEnxX5rc3WejbrS"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-caps text-[10px] uppercase">
+              Bespoke Leather
+            </span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Carrying Atelier</p>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Cognac Structured Audio Folio</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Vegetable-tanned full-grain cowhide with bespoke interior cable organization sleeves.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-price-card text-price-card font-bold text-on-surface">$220.00</span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md font-semibold" onclick="quickAdd('Cognac Structured Audio Folio', 220)" type="button">
+                + Quick Add
+              </button>
+</div>
+</div>
+</div>
+<!-- Companion 3: Solid Brass Headphone Pedestal -->
+<div class="group flex flex-col rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-all">
+<div class="aspect-square w-full relative bg-surface-container-low overflow-hidden">
+<img alt="Solid Monolith Headphone Stand" class="w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWdyLl1b3qUUnscuw4h1NFIbLnhujfNl0M3QZeP-p6pKNcjMOJ4pli5ozicCh4gLPSK0m08CBqLIZoev6Iyh5W1Wu7mUw7WHfHNOnzvtPmlhpZZOK_f4fnWRJsNbljriUqrd026Rpa--KngD3D6HxApXUaDfqsv1rJbkzAimiKaWYCMspj7UAKZTYkTEQc_kq7KhHoWQCBuMtoEhjWvBnSHi7csYjZsjTlEda1IC6nSHX9LRO5iAw3"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface font-label-caps text-[10px] uppercase">
+              Hardware Essential
+            </span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Studio Architecture</p>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1">Monolith Sand-Cast Stand</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Balanced 1.2kg solid alloy stand that maintains natural tension on the headband springs.</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-price-card text-price-card font-bold text-on-surface">$110.00</span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md font-semibold" onclick="quickAdd('Monolith Sand-Cast Stand', 110)" type="button">
+                + Quick Add
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript Layer -->
+<script>
+    let currentBasePrice = 380;
+    let selectedQuantity = 1;
+    let selectedColorName = 'Obsidian Matte';
+    let isZoomed = false;
+
+    // Gallery Angle Switcher
+    function switchImage(srcUrl, index) {
+      const mainImg = document.getElementById('main-product-image');
+      mainImg.style.opacity = '0.3';
+      setTimeout(() => {
+        mainImg.src = srcUrl;
+        mainImg.style.opacity = '1';
+      }, 150);
+
+      // Update thumb styling
+      const thumbBtns = document.querySelectorAll('.thumb-btn');
+      thumbBtns.forEach((btn, idx) => {
+        if (idx === index) {
+          btn.classList.remove('opacity-70');
+          btn.classList.add('bg-surface-container-high');
+        } else {
+          btn.classList.add('opacity-70');
+          btn.classList.remove('bg-surface-container-high');
+        }
+      });
+    }
+
+    // Toggle Magnifier Zoom
+    function toggleZoom() {
+      const mainImg = document.getElementById('main-product-image');
+      const zoomIcon = document.getElementById('zoom-icon');
+      isZoomed = !isZoomed;
+
+      if (isZoomed) {
+        mainImg.classList.add('scale-150');
+        zoomIcon.textContent = 'zoom_out';
+      } else {
+        mainImg.classList.remove('scale-150');
+        zoomIcon.textContent = 'zoom_in';
+      }
+    }
+
+    // Color Swatch Selection
+    function selectColor(colorName, btnElement) {
+      selectedColorName = colorName;
+      document.getElementById('swatch-label').textContent = colorName;
+
+      // Reset all color chips
+      document.querySelectorAll('.color-chip').forEach(chip => {
+        chip.classList.remove('ring-2', 'ring-primary', 'ring-offset-2', 'ring-offset-surface-container-lowest');
+      });
+
+      // Highlight selected
+      btnElement.classList.add('ring-2', 'ring-primary', 'ring-offset-2', 'ring-offset-surface-container-lowest');
+    }
+
+    // Fit Variant Architecture Selection
+    function selectFit(btnElement, price) {
+      currentBasePrice = price;
+      updatePricingUI();
+
+      // Reset chip styling
+      document.querySelectorAll('.fit-chip').forEach(chip => {
+        chip.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        chip.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+
+      // Apply active
+      btnElement.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      btnElement.classList.remove('bg-surface-container-low', 'text-on-surface');
+    }
+
+    // Stepper Counter
+    function adjustQty(delta) {
+      selectedQuantity = Math.max(1, selectedQuantity + delta);
+      document.getElementById('qty-val').textContent = selectedQuantity;
+      updatePricingUI();
+    }
+
+    // Dynamic Price Refresher
+    function updatePricingUI() {
+      const activeTotal = (currentBasePrice * selectedQuantity).toFixed(2);
+      document.getElementById('active-price').textContent = '$' + activeTotal;
+      document.getElementById('cta-label').textContent = `Add to Atelier Bag — $${activeTotal}`;
+    }
+
+    // Accordion Expander
+    function toggleAccordion(contentId, triggerBtn) {
+      const content = document.getElementById(contentId);
+      const icon = triggerBtn.querySelector('.material-symbols-outlined');
+      const isHidden = content.classList.contains('hidden');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    // Toast and Action System
+    function handleAddToCart() {
+      const totalFormatted = (currentBasePrice * selectedQuantity).toFixed(2);
+      const summaryText = `${selectedQuantity}x AURA One (${selectedColorName}) — $${totalFormatted}`;
+      document.getElementById('toast-summary').textContent = summaryText;
+      showToast();
+    }
+
+    function quickAdd(itemTitle, itemPrice) {
+      document.getElementById('toast-summary').textContent = `Added 1x ${itemTitle} — $${itemPrice.toFixed(2)}`;
+      showToast();
+    }
+
+    function handleInstantCheckout() {
+      const totalFormatted = (currentBasePrice * selectedQuantity).toFixed(2);
+      alert(`Initializing Apple Pay Express session for $${totalFormatted}. Secure biometric authorization requested.`);
+    }
+
+    function showToast() {
+      const toast = document.getElementById('cart-toast');
+      toast.classList.remove('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        hideToast();
+      }, 4000);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('cart-toast');
+      toast.classList.add('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }
+
+    function openFullscreenModal() {
+      const currentSrc = document.getElementById('main-product-image').src;
+      window.open(currentSrc, '_blank');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl"><div class="max-w-[1440px] mx-auto px-margin py-space-xl grid grid-cols-1 md:grid-cols-3 gap-gutter"><div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-secondary text-[28px]">verified_user</span><div><h4 class="font-label-lg text-label-lg text-on-surface">256-Bit SSL Encryption</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Military-grade protocol protecting transactions</p></div></div><div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-secondary text-[28px]">eco</span><div><h4 class="font-label-lg text-label-lg text-on-surface">Carbon Neutral Delivery</h4><p class="font-body-sm text-body-sm text-on-surface-variant">100% verified offset logistics worldwide</p></div></div><div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-secondary text-[28px]">published_with_changes</span><div><h4 class="font-label-lg text-label-lg text-on-surface">30-Day Bespoke Guarantee</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Complimentary return pick-up &amp; replacements</p></div></div></div><div class="max-w-[1440px] mx-auto px-margin py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter"><div class="lg:col-span-2 pr-gutter"><div class="flex items-center gap-space-md mb-space-md"><img alt="AURA STUDIO Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vbps_aF4HczcrqzPxCS2pcKROyGKP_gDIqhpLE2ZaVsWCXl4cf22nMK2S0i6taZ72I1bD6XGemeBZVWVdCnYRNPh54-MQoosIO-LZNfcJcVDMEAqsVOi97TlmURErL5kbq0l2DlZLZCvng42wzZkcfl61JTcqB-znAxc8wlLdC0CxoH3c1Nfv-zRgg1QVPVWZBt7etymhUqegFTubFOku9QgNxKk9iMu4Q4zICmoXYJMqZGm5O6cK7XoM"/><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface">Aura Studio</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-lg max-w-md">Balancing the clinical discipline of high-end consumer technology with the refined kinetic energy of premier lifestyle artifacts.</p><form class="flex items-center gap-space-xs max-w-md"><input class="w-full px-space-md py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary shadow-[0_1px_4px_rgba(0,0,0,0.02)]" placeholder="Enter your email address" type="email"/><button class="px-space-lg py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-colors whitespace-nowrap" type="submit">Join Atelier</button></form></div><div><h5 class="font-label-caps text-label-caps text-on-surface mb-space-md uppercase">Shop</h5><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="shop-all" href="#">All Collections</a></li><li><a class="hover:text-on-surface transition-colors" data-path="new-arrivals" href="#">New Releases</a></li><li><a class="hover:text-on-surface transition-colors" data-path="best-sellers" href="#">Curated Essentials</a></li><li><a class="hover:text-on-surface transition-colors" data-path="shop-all" href="#">Limited Drops</a></li><li><a class="hover:text-on-surface transition-colors" data-path="shop-all" href="#">Gift Vouchers</a></li></ul></div><div><h5 class="font-label-caps text-label-caps text-on-surface mb-space-md uppercase">Studio</h5><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="about-studio" href="#">Manifesto</a></li><li><a class="hover:text-on-surface transition-colors" data-path="about-studio" href="#">Material Engineering</a></li><li><a class="hover:text-on-surface transition-colors" data-path="about-studio" href="#">Carbon Transparency</a></li><li><a class="hover:text-on-surface transition-colors" data-path="about-studio" href="#">Flagship Locations</a></li><li><a class="hover:text-on-surface transition-colors" data-path="about-studio" href="#">Careers</a></li></ul></div><div><h5 class="font-label-caps text-label-caps text-on-surface mb-space-md uppercase">Client Services</h5><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="concierge" href="#">Order Tracking</a></li><li><a class="hover:text-on-surface transition-colors" data-path="concierge" href="#">Bespoke Consultations</a></li><li><a class="hover:text-on-surface transition-colors" data-path="concierge" href="#">Repairs &amp; Care</a></li><li><a class="hover:text-on-surface transition-colors" data-path="concierge" href="#">Returns &amp; Exchanges</a></li><li><a class="hover:text-on-surface transition-colors" data-path="concierge" href="#">Contact Concierge</a></li></ul></div></div><div class="max-w-[1440px] mx-auto px-margin py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><p>© 2025 AURA STUDIO Inc. All rights reserved. Crafted for precision living.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="accessibility" href="#">Accessibility</a></div></div></footer></body></html>

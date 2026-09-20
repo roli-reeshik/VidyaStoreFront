@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#cbdbf5","tertiary":"#000000","on-primary-fixed-variant":"#3f465c","surface":"#f8f9ff","primary-container":"#131b2e","surface-container-highest":"#d3e4fe","primary-fixed":"#dae2fd","surface-tint":"#565e74","on-secondary-fixed":"#0f0069","primary-fixed-dim":"#bec6e0","on-primary-container":"#7c839b","on-tertiary-container":"#79849a","error":"#ba1a1a","on-error-container":"#93000a","primary":"#000000","on-error":"#ffffff","on-primary-fixed":"#131b2e","inverse-on-surface":"#eaf1ff","secondary-fixed-dim":"#c3c0ff","tertiary-fixed":"#d8e3fb","on-background":"#0b1c30","on-primary":"#ffffff","on-surface-variant":"#45464d","inverse-primary":"#bec6e0","on-tertiary-fixed":"#111c2d","surface-container-high":"#dce9ff","on-secondary-container":"#fffbff","on-secondary":"#ffffff","background":"#f8f9ff","tertiary-fixed-dim":"#bcc7de","inverse-surface":"#213145","error-container":"#ffdad6","tertiary-container":"#111c2d","secondary":"#4b41e1","surface-bright":"#f8f9ff","secondary-container":"#645efb","on-tertiary-fixed-variant":"#3c475a","on-surface":"#0b1c30","outline-variant":"#c6c6cd","outline":"#76777d","surface-variant":"#d3e4fe","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","surface-container":"#e5eeff","on-secondary-fixed-variant":"#3323cc","secondary-fixed":"#e2dfff","on-tertiary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"3rem","gutter-desktop":"2rem","space-lg":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xs":"0.25rem","margin":"1.5rem","margin-mobile":"1rem","gutter-mobile":"1rem","space-xl":"2.5rem","gutter":"1.5rem"},"fontFamily":{"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"price-hero":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"label-caps":["Inter"],"price-card":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Inter"]},"fontSize":{"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"price-hero":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"700"}],"price-card":["16px",{"lineHeight":"22px","fontWeight":"600"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-center items-center"><main class="w-full flex items-center justify-center p-margin"><div class="flex flex-col w-full items-center justify-center p-2 sm:p-6 lg:p-10 relative">
+<!-- Ambient Backdrop Glows -->
+<div class="absolute -top-12 -left-12 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -right-16 w-96 h-96 bg-surface-dim/30 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Main Luxury Modal Container -->
+<div class="relative w-full max-w-6xl bg-surface-container-lowest text-on-surface rounded-xl shadow-2xl overflow-hidden">
+<!-- Modal Top Brand & Security Utility Bar -->
+<div class="px-6 py-4 sm:px-10 bg-surface-container-low flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-sm tracking-widest text-primary font-bold uppercase text-base sm:text-lg">AURA STUDIO</span>
+</div>
+<span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-caps text-on-surface-variant uppercase tracking-wider hidden sm:inline-block">Atelier Checkout</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-on-surface text-label-md font-label-md">
+<span class="material-symbols-outlined text-sm text-secondary" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span>256-Bit SSL Encrypted Checkout</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-primary-fixed hover:bg-primary text-label-md font-label-md transition-colors" id="toggle-state-demo-btn" onclick="toggleCheckoutState()" title="Toggle Confirmation View">
+<span class="material-symbols-outlined text-sm">swap_horiz</span>
+<span id="demo-mode-label">Demo: Success State</span>
+</button>
+</div>
+</div>
+<!-- Active Checkout Flow Stage -->
+<div class="grid grid-cols-1 lg:grid-cols-12 w-full transition-opacity duration-300" id="checkout-view">
+<!-- Left Column: Customer Details, Express Pay & Inputs (7 Cols) -->
+<div class="lg:col-span-7 p-6 sm:p-10 flex flex-col gap-8">
+<!-- Express Checkout Bar -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-on-surface-variant text-label-caps">Express Checkout</span>
+<span class="font-label-md text-secondary font-medium">Instant 1-Click</span>
+</div>
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Apple Pay -->
+<button class="h-12 bg-primary text-on-primary hover:bg-surface-tint rounded-lg flex items-center justify-center transition shadow-sm font-label-lg font-semibold gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-base">desktop_mac</span>
+<span class="tracking-tight">Pay</span>
+</button>
+<!-- Shop Pay -->
+<button class="h-12 bg-secondary text-on-secondary hover:bg-secondary-container rounded-lg flex items-center justify-center transition shadow-sm font-label-lg font-bold" type="button">
+<span>shop<span class="text-secondary-fixed">Pay</span></span>
+</button>
+<!-- PayPal -->
+<button class="h-12 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-lg flex items-center justify-center transition shadow-sm font-label-lg font-bold italic" type="button">
+<span class="text-secondary">Pay</span><span class="text-on-surface">Pal</span>
+</button>
+</div>
+<div class="relative flex items-center justify-center py-2 mt-2">
+<div class="w-full h-px bg-surface-container-highest absolute"></div>
+<span class="relative bg-surface-container-lowest px-4 font-label-caps text-on-surface-variant uppercase tracking-widest text-[10px]">
+              Or Continue With Card
+            </span>
+</div>
+</div>
+<!-- Multi-Step Form Fields -->
+<form class="flex flex-col gap-8" onsubmit="event.preventDefault(); simulateSuccess();">
+<!-- Step 1: Contact Information -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-xs flex items-center justify-center font-bold">1</span>
+                Contact Information
+              </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Already an atelier member? <a class="text-secondary underline font-medium" href="#">Sign In</a></span>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-on-surface-variant" for="email">Email Address</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="email" placeholder="alexander@domain.com" required="" type="email" value="alexander.vane@luxurydesign.io"/>
+</div>
+<label class="flex items-start gap-3 cursor-pointer pt-1">
+<input checked="" class="mt-1 rounded text-primary focus:ring-primary accent-primary h-4 w-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Send me exclusive previews of seasonal atelier drops and private invitations.</span>
+</label>
+</div>
+<!-- Step 2: Shipping Address -->
+<div class="flex flex-col gap-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-xs flex items-center justify-center font-bold">2</span>
+              Shipping Destination
+            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="first-name">First Name</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="first-name" required="" type="text" value="Alexander"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="last-name">Last Name</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="last-name" required="" type="text" value="Vane"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="address">Street Address</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="address" required="" type="text" value="742 Evergreen Promenade"/>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="suite">Apt / Suite</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="suite" type="text" value="Penthouse 4B"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="city">City</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="city" required="" type="text" value="Tribeca"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="zip">Postal Code</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="zip" required="" type="text" value="10013"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="country">Country</label>
+<select class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="country">
+<option selected="">United States</option>
+<option>United Kingdom</option>
+<option>France</option>
+<option>Japan</option>
+<option>Germany</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="state">State / Region</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-200" id="state" required="" type="text" value="New York"/>
+</div>
+</div>
+</div>
+<!-- Step 3: Shipping Method -->
+<div class="flex flex-col gap-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-xs flex items-center justify-center font-bold">3</span>
+              Delivery Logistics
+            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<!-- Free Standard -->
+<label class="relative flex flex-col p-4 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2.5">
+<input checked="" class="accent-primary h-4 w-4" name="shipping_tier" onchange="updateShipping(0)" type="radio"/>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Express Courier</span>
+</div>
+<span class="font-label-caps text-secondary font-bold text-[10px] bg-secondary/10 px-2 py-0.5 rounded-full">FREE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-6">Dispatched with temperature-controlled packaging. 2-3 business days.</p>
+</label>
+<!-- Priority Courier -->
+<label class="relative flex flex-col p-4 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2.5">
+<input class="accent-primary h-4 w-4" name="shipping_tier" onchange="updateShipping(15)" type="radio"/>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Next-Day Atelier</span>
+</div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">$15.00</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-6">Signature on delivery, direct dedicated dispatch carrier.</p>
+</label>
+</div>
+</div>
+<!-- Step 4: Payment Simulation -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-xs flex items-center justify-center font-bold">4</span>
+                Secure Payment
+              </h3>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-[10px] font-bold">VISA</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-[10px] font-bold">MC</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-[10px] font-bold">AMEX</span>
+</div>
+</div>
+<!-- Card Elements Mockup -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="card-num">Card Number</label>
+<div class="relative flex items-center">
+<input class="w-full h-12 pl-4 pr-12 rounded-lg bg-surface-container-lowest text-on-surface font-body-md tracking-wider focus:outline-none focus:ring-2 focus:ring-primary" id="card-num" required="" type="text" value="•••• •••• •••• 9012"/>
+<span class="absolute right-3.5 material-symbols-outlined text-secondary text-xl">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="card-expiry">Expiry</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary" id="card-expiry" required="" type="text" value="08 / 28"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant flex items-center justify-between" for="card-cvv">
+<span>CVV / CVC</span>
+<span class="material-symbols-outlined text-xs text-on-surface-variant cursor-help" title="3 or 4-digit security code">info</span>
+</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary" id="card-cvv" maxlength="4" required="" type="password" value="749"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-on-surface-variant" for="card-name">Cardholder Full Name</label>
+<input class="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-md focus:outline-none focus:ring-2 focus:ring-primary" id="card-name" required="" type="text" value="Alexander Vane"/>
+</div>
+</div>
+</div>
+<!-- Trust Badges Strip -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">PCI Level 1</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-sm text-secondary">shield_locked</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">VeriSign Safe</span>
+</div>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-sm text-secondary">published_with_changes</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase">30-Day Bespoke</span>
+</div>
+</div>
+<!-- Checkout CTA -->
+<button class="w-full h-14 bg-primary text-on-primary hover:bg-surface-tint rounded-lg font-headline-sm text-headline-sm flex items-center justify-center gap-3 transition-transform active:scale-[0.99] shadow-lg" id="submit-order-button" type="submit">
+<span>Complete Order</span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span>
+<span id="button-total-display">$728.20 USD</span>
+</button>
+</form>
+</div>
+<!-- Right Column: Cart Breakdown & Atelier Line Items (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-low p-6 sm:p-10 flex flex-col justify-between">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between pb-3">
+<h3 class="font-headline-md text-headline-md text-on-surface">Order Summary</h3>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-md text-label-md">3 Items</span>
+</div>
+<!-- Items List -->
+<div class="flex flex-col gap-4">
+<!-- Product Item 1 -->
+<div class="flex items-center gap-4 p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow transition">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden bg-surface flex-shrink-0">
+<img alt="AURA One Headphones" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWdyLl1b3qUUnscuw4h1NFIbLnhujfNl0M3QZeP-p6pKNcjMOJ4pli5ozicCh4gLPSK0m08CBqLIZoev6Iyh5W1Wu7mUw7WHfHNOnzvtPmlhpZZOK_f4fnWRJsNbljriUqrd026Rpa--KngD3D6HxApXUaDfqsv1rJbkzAimiKaWYCMspj7UAKZTYkTEQc_kq7KhHoWQCBuMtoEhjWvBnSHi7csYjZsjTlEda1IC6nSHX9LRO5iAw3"/>
+<span class="absolute top-1 right-1 bg-primary text-on-primary font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-sm text-sm font-semibold truncate text-on-surface">AURA One Studio Headphones</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Matte Obsidian • Wireless ANC</p>
+</div>
+<div class="text-right">
+<span class="font-price-card text-price-card text-on-surface font-semibold">$380.00</span>
+</div>
+</div>
+<!-- Product Item 2 -->
+<div class="flex items-center gap-4 p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow transition">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden bg-surface flex-shrink-0">
+<img alt="Siena Crossbody Bag" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgrh2VAEoOGtYZ5O-NbEH5988088BFFnV2DHbX2KwmeC8oxDgvn3yOH0Nb3Aw4NSi2RmhEN-mb3yTQqxedEgYZz6-qwuml5IZ87Vpjv8nbUzXdkC4ghRMJPEg34flY5Y6LmIa-sx-N6IMDHR8XCd-7T59YAptPZtFjzb326v6HyuoD-zSeBuAEX2ccyMJwQzXjL_lyTm3E9GWBt-oabRqKIA1R3GAJi5JAauvtwIgYSKHVez-VIUIZ"/>
+<span class="absolute top-1 right-1 bg-primary text-on-primary font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-sm text-sm font-semibold truncate text-on-surface">Siena Italian Leather Bag</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cognac Tan • Brushed Brass</p>
+</div>
+<div class="text-right">
+<span class="font-price-card text-price-card text-on-surface font-semibold">$210.00</span>
+</div>
+</div>
+<!-- Product Item 3 -->
+<div class="flex items-center gap-4 p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow transition">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden bg-surface flex-shrink-0">
+<img alt="Ceramic Vessel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkeZrSwheRyXu2Plz7sMmw-Pwfpv31nEkd9Xmy0ljozpqY0TUp9lF5tTVCrS_v8zUr8CCeVS1FxNXI1VouR_I18EJMpaUmgjAdIm9YbgEOYD1TpE8-eKdZsIyaES3Pi2P_SsNnlng1TkrojKUp8gPJVJXwyHwP6oBFtiAJt8j_2dL_RF_qz2Bkt0E1GWybKRGjpDojW3KHVS4b3Al5zHA4BEfHGyN_iUO3nKh9oJOfrnQtYiMUeCNU"/>
+<span class="absolute top-1 right-1 bg-primary text-on-primary font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-headline-sm text-sm font-semibold truncate text-on-surface">Ribbed Ceramic Vessel</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Handmade • Alabaster White</p>
+</div>
+<div class="text-right">
+<span class="font-price-card text-price-card text-on-surface font-semibold">$90.00</span>
+</div>
+</div>
+</div>
+<!-- Promo Code Input -->
+<div class="flex gap-2 pt-2">
+<input class="flex-1 h-11 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm focus:outline-none focus:ring-2 focus:ring-primary uppercase tracking-wider" id="discount-code" placeholder="Promo code or gift voucher" type="text"/>
+<button class="px-5 h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition" onclick="applyPromo()" type="button">
+              Apply
+            </button>
+</div>
+<div class="hidden text-xs text-secondary font-medium -mt-4 pl-1" id="promo-msg">Voucher applied: 10% Member Privilege</div>
+<!-- Cost Breakdown List -->
+<div class="flex flex-col gap-3 pt-4 bg-surface-container-lowest p-5 rounded-xl">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span>Subtotal (3 artifacts)</span>
+<span class="text-on-surface font-medium" id="summary-subtotal">$680.00</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+                Shipping
+                <span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">eco</span>
+</span>
+<span class="text-secondary font-semibold" id="summary-shipping">FREE (Express)</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span>Estimated Sales Tax (NY 7.08%)</span>
+<span class="text-on-surface font-medium">$48.20</span>
+</div>
+<div class="pt-3 mt-1 flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Total</span>
+<span class="font-label-caps text-on-surface-variant text-[11px] uppercase tracking-wider">Including all Duties &amp; Taxes</span>
+</div>
+<div class="text-right">
+<span class="font-price-hero text-price-hero text-primary font-bold tracking-tight" id="summary-grand-total">$728.20</span>
+<span class="block font-label-caps text-on-surface-variant text-[11px]">USD</span>
+</div>
+</div>
+</div>
+<!-- Free Shipping & Concierge Assurance Micro-Card -->
+<div class="p-4 rounded-xl bg-secondary/5 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl">workspace_premium</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Atelier Guarantee</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Complimentary express delivery, white-glove packaging, and direct support from our studio specialists.</p>
+</div>
+</div>
+</div>
+<div class="pt-8 text-center lg:text-left text-on-surface-variant font-label-caps text-[10px] uppercase tracking-widest flex items-center justify-between">
+<span>AURA STUDIO • NYC • PARIS • TOKYO</span>
+<span>EST. 2024</span>
+</div>
+</div>
+</div>
+<!-- Celebration / Order Success State Container (Toggled via JS) -->
+<div class="hidden flex-col items-center justify-center p-8 sm:p-16 lg:p-20 text-center animate-fade-in" id="confirmation-view">
+<!-- Animated / Visual Success Hero Pill -->
+<div class="relative mb-6">
+<div class="w-20 h-20 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-secondary"></span>
+</span>
+</div>
+<span class="px-4 py-1.5 rounded-full bg-secondary/10 text-secondary font-label-caps text-xs tracking-widest uppercase font-bold mb-3">
+        Payment Verified • Order Confirmed
+      </span>
+<h2 class="font-headline-lg text-headline-lg sm:text-display-hero-mobile text-primary font-bold tracking-tight">
+        Thank You, Alexander!
+      </h2>
+<p class="max-w-xl font-body-lg text-body-lg text-on-surface-variant mt-2 mb-8">
+        Your order <span class="font-semibold text-on-surface">#AUR-89241</span> has been placed. Our master craftspeople in Brooklyn are preparing your items with white-glove packaging.
+      </p>
+<!-- Details Summary Bento Card inside Confirmation -->
+<div class="w-full max-w-2xl bg-surface-container-low rounded-2xl p-6 sm:p-8 text-left mb-8 shadow-sm">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pb-6">
+<div>
+<span class="font-label-caps text-on-surface-variant text-[11px] uppercase">Estimated Arrival</span>
+<p class="font-headline-sm text-sm font-semibold text-on-surface mt-1">Thursday, Oct 24</p>
+<span class="font-body-sm text-body-sm text-secondary">Express Courier</span>
+</div>
+<div>
+<span class="font-label-caps text-on-surface-variant text-[11px] uppercase">Destination</span>
+<p class="font-headline-sm text-sm font-semibold text-on-surface mt-1">Alexander Vane</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">742 Evergreen, Penthouse 4B</span>
+</div>
+<div>
+<span class="font-label-caps text-on-surface-variant text-[11px] uppercase">Payment</span>
+<p class="font-headline-sm text-sm font-semibold text-on-surface mt-1">•••• 9012 (Apple Pay)</p>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Total: $728.20 USD</span>
+</div>
+</div>
+<!-- Thumbnails of purchased gear -->
+<div class="pt-6 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest overflow-hidden">
+<img alt="AURA Headphones" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWdyLl1b3qUUnscuw4h1NFIbLnhujfNl0M3QZeP-p6pKNcjMOJ4pli5ozicCh4gLPSK0m08CBqLIZoev6Iyh5W1Wu7mUw7WHfHNOnzvtPmlhpZZOK_f4fnWRJsNbljriUqrd026Rpa--KngD3D6HxApXUaDfqsv1rJbkzAimiKaWYCMspj7UAKZTYkTEQc_kq7KhHoWQCBuMtoEhjWvBnSHi7csYjZsjTlEda1IC6nSHX9LRO5iAw3"/>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest overflow-hidden">
+<img alt="Siena Leather Bag" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgrh2VAEoOGtYZ5O-NbEH5988088BFFnV2DHbX2KwmeC8oxDgvn3yOH0Nb3Aw4NSi2RmhEN-mb3yTQqxedEgYZz6-qwuml5IZ87Vpjv8nbUzXdkC4ghRMJPEg34flY5Y6LmIa-sx-N6IMDHR8XCd-7T59YAptPZtFjzb326v6HyuoD-zSeBuAEX2ccyMJwQzXjL_lyTm3E9GWBt-oabRqKIA1R3GAJi5JAauvtwIgYSKHVez-VIUIZ"/>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest overflow-hidden">
+<img alt="Ceramic Vessel" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkeZrSwheRyXu2Plz7sMmw-Pwfpv31nEkd9Xmy0ljozpqY0TUp9lF5tTVCrS_v8zUr8CCeVS1FxNXI1VouR_I18EJMpaUmgjAdIm9YbgEOYD1TpE8-eKdZsIyaES3Pi2P_SsNnlng1TkrojKUp8gPJVJXwyHwP6oBFtiAJt8j_2dL_RF_qz2Bkt0E1GWybKRGjpDojW3KHVS4b3Al5zHA4BEfHGyN_iUO3nKh9oJOfrnQtYiMUeCNU"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant pl-2">3 curated artifacts</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Packaging in Studio</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-4 w-full max-w-md">
+<button class="flex-1 min-w-[160px] h-12 bg-primary text-on-primary hover:bg-surface-tint rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 transition shadow" onclick="trackOrderModal()" type="button">
+<span class="material-symbols-outlined text-lg">local_shipping</span>
+<span>Track Order</span>
+</button>
+<button class="flex-1 min-w-[160px] h-12 bg-surface-container text-on-surface hover:bg-surface-container-high rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 transition" onclick="toggleCheckoutState()" type="button">
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+<span>Edit Order</span>
+</button>
+</div>
+<!-- Follow-up reassurance note -->
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-8">
+        We sent an invoice and live tracking link to <span class="font-semibold text-on-surface">alexander.vane@luxurydesign.io</span>.
+      </p>
+</div>
+</div>
+<script>
+    let shippingCost = 0;
+    let baseSubtotal = 680.00;
+    let taxes = 48.20;
+    let discount = 0;
+
+    function updateTotals() {
+      const grandTotal = baseSubtotal + shippingCost + taxes - discount;
+      const formattedTotal = '$' + grandTotal.toFixed(2);
+      
+      const summaryGrand = document.getElementById('summary-grand-total');
+      const buttonDisplay = document.getElementById('button-total-display');
+      
+      if (summaryGrand) summaryGrand.innerText = formattedTotal;
+      if (buttonDisplay) buttonDisplay.innerText = formattedTotal + ' USD';
+    }
+
+    function updateShipping(cost) {
+      shippingCost = cost;
+      const shippingLabel = document.getElementById('summary-shipping');
+      if (shippingLabel) {
+        if (cost === 0) {
+          shippingLabel.innerText = 'FREE (Express)';
+          shippingLabel.className = 'text-secondary font-semibold';
+        } else {
+          shippingLabel.innerText = '$' + cost.toFixed(2) + ' (Next-Day)';
+          shippingLabel.className = 'text-on-surface font-medium';
+        }
+      }
+      updateTotals();
+    }
+
+    function applyPromo() {
+      const input = document.getElementById('discount-code');
+      const msg = document.getElementById('promo-msg');
+      if (input && input.value.trim() !== '') {
+        discount = 68.00; // 10%
+        if (msg) msg.classList.remove('hidden');
+        updateTotals();
+      }
+    }
+
+    function toggleCheckoutState() {
+      const checkoutView = document.getElementById('checkout-view');
+      const confirmView = document.getElementById('confirmation-view');
+      const label = document.getElementById('demo-mode-label');
+
+      if (checkoutView.classList.contains('hidden')) {
+        checkoutView.classList.remove('hidden');
+        confirmView.classList.add('hidden');
+        confirmView.classList.remove('flex');
+        if (label) label.innerText = 'Demo: Success State';
+      } else {
+        checkoutView.classList.add('hidden');
+        confirmView.classList.remove('hidden');
+        confirmView.classList.add('flex');
+        if (label) label.innerText = 'Demo: Checkout View';
+      }
+    }
+
+    function simulateSuccess() {
+      const submitBtn = document.getElementById('submit-order-button');
+      if (!submitBtn) return;
+      
+      submitBtn.innerHTML = `
+        <svg class="animate-spin h-5 w-5 text-on-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+        </svg>
+        <span>Authorizing Atelier Payment...</span>
+      `;
+      
+      setTimeout(() => {
+        toggleCheckoutState();
+        submitBtn.innerHTML = `
+          <span>Complete Order</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span>
+          <span id="button-total-display">$728.20 USD</span>
+        `;
+      }, 700);
+    }
+
+    function trackOrderModal() {
+      alert('Tracking initialized: Tracking code #AUR-89241 dispatched via DHL White-Glove Atelier Logistics.');
+    }
+  </script>
+</div></main></body></html>
